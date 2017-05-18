@@ -1,0 +1,60 @@
+{
+  "name": "@ngx-webpack/karma",
+  "version": "0.1.3",
+  "description": "Karma configuration generator based on Webpack for Angular projects",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "np --skip-cleanup",
+    "dll": "NODE_ENV=install webpack",
+    "test": "npm run dll && karma start"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "author": {
+    "name": "blacksonic",
+    "email": "soos.gabor86@gmail.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blacksonic/ngx-karma.git"
+  },
+  "keywords": [
+    "angular",
+    "webpack",
+    "karma",
+    "jasmine"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "~2.5.43",
+    "@types/node": "~7.0.5",
+    "jasmine-core": "~2.5.2",
+    "karma": "~1.5.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-phantomjs-launcher": "~1.0.2",
+    "karma-sourcemap-loader": "~0.3.7",
+    "karma-webpack": "~2.0.2"
+  },
+  "devDependencies": {
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "ngx-tslint-config": "1.0.3",
+    "ngx-webpack": "3.7.5",
+    "np": "2.12.0",
+    "webpack": "2.2.1",
+    "zone.js": "0.7.7"
+  },
+  "peerDependencies": {
+    "zone.js": "^0.7.0 || ^0.8.0",
+    "core-js": "^2.4.0"
+  }
+}
